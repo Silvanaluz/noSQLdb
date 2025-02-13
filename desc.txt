@@ -1,0 +1,11 @@
+Data = 11/02/2025 
+
+Assunto: Gerenciamento de agenda Médica 
+
+Principais Funções: 
+
+✅ Cadastro e gerenciamento de pacientes  
+
+✅ Cadastro e gerenciamento de médicos  
+
+✅ Agendamento de consultas médicas
