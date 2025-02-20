@@ -1,0 +1,35 @@
+gerenciamento de Agenda Médica
+Definição de  exemplos de documentos em JSON das coleções possíveis para atender às operações principais do sistema 
+
+1. Usuários ( users)
+Armazene os dados dos usuários, sejam pacientes, médicos ou administradores.{
+  "_id": "usr001",
+  "nome": "Carlos Silva",
+  "email": "carlos.silva@email.com",
+  "tipo": "paciente",
+  "telefone": "(11) 99999-0000",
+  "data_cadastro": "2025-02-20T10:00:00Z"
+}
+
+2. Profissionais de Saúde ( professionals)
+Registe os médicos e outros profissionais disponíveis para consultas.
+{
+  "_id": "prof123",
+  "nome": "Dra. Juliana Souza",
+  "especialidade": "Dermatologia",
+  "crm": "SP-123456",
+  "telefone": "(11) 98888-1111",
+  "email": "juliana.souza@email.com",
+  "data_cadastro": "2025-02-20T09:30:00Z"
+}
+
+3. Consultas ( appointments)
+Gerencia o agendamento de consultas entre pacientes e profissionais.
+{
+  "_id": "appt789",
+  "paciente_id": "usr001",
+  "profissional_id": "prof123",
+  "data_hora": "2025-02-25T14:00:00Z",
+  "status": "Confirmada",
+  "observacoes": "Consulta de rotina"
+}
