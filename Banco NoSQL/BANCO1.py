@@ -49,7 +49,7 @@ consultas.insert_one({
     {
         "cid": "M1040"
     }
-    ]
+    
 })
 
 print("Documentos inseridos com sucesso!")
