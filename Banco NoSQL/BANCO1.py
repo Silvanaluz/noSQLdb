@@ -3,7 +3,7 @@
 import os
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
-from dotenv import load_dotenv
+from dotenv import load_dotenv # type: ignore
 
 load_dotenv()
 
@@ -11,6 +11,8 @@ USER_DB = os.getenv('USER_DB')
 SENHA_DB = os.getenv('SENHA_DB')
 
 uri = "mongodb+srv://"+USER_DB+":"+SENHA_DB+"@cluster0.ynjn4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+
+
 
 # Create a new client and connect to the server
 client = MongoClient(uri, server_api=ServerApi('1'))
@@ -48,7 +50,7 @@ consultas.insert_one({
     },
     {
         "cid": "M1040"
-    }
+    }]
     
 })
 

@@ -6,7 +6,7 @@ from pydantic import BaseModel
 from typing import List, Optional
 from pymongo.server_api import ServerApi
 
-from dotenv import load_dotenv
+from dotenv import load_dotenv # type: ignore
 
 load_dotenv()
 
