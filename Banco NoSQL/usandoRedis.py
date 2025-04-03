@@ -16,7 +16,7 @@ def cadastrar_paciente():
     print("✅ Paciente cadastrado com sucesso!")
 
 # Função para listar pacientes
-def listar_pacientes():dir
+def listar_pacientes():
     keys = r.keys("paciente:*")  # Pega todas as chaves de pacientes
     if not keys:
         print("❌ Nenhum paciente cadastrado.")
